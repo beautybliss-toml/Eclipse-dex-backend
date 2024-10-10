@@ -9,7 +9,8 @@ module.exports = (app) => {
   //pool controller
   const poolController = require("../controller/pool.controller.js");
   var router1 = require("express").Router();
-  router1.post("/getPoolInfo", poolController.getPoolInfo);
+  router1.get("/getPoolInfo", poolController.getPoolInfo);
+  router1.post("/savePoolInfo", poolController.savePoolInfo);
 
-  app.use("/api/pool", router1);
+  app.use("/epsapi/", router1);
 };

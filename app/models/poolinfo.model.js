@@ -1,26 +1,23 @@
 module.exports = (sequelize, Sequelize) => {
-  const user = sequelize.define("user", {
+  const poolinfo = sequelize.define("poolinfo", {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
+    poolId: {
       type: Sequelize.STRING,
-      unique: true,
-      validate: {
-        isEmail: true,
-      }
+      allowNull: false
     },
-    password: {
+    minta: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    mintb: {
       type: Sequelize.STRING,
       allowNull: false,
     },
-    password1: {
-      type: Sequelize.STRING,
-      allowNull: true
-    }
   });
 
-  return user;
+  return poolinfo;
 };
