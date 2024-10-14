@@ -21,7 +21,7 @@ exports.savePoolInfo = async (req, res) => {
         const mintA = req.body.mintA;
         const mintB = req.body.mintB;
 
-        await PoolInfo.create({ id: poolId, minta: mintA, mintb: mintB });
+        await PoolInfo.create({ poolId: poolId, minta: mintA, mintb: mintB, liq: "1287", vol: "0", fee: "0", apr: "0" });
 
         res.json({ message: "success" });
     } catch (error) {

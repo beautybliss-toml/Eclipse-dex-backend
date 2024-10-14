@@ -17,6 +17,19 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
       allowNull: false,
     },
+    liq: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
+    vol: {
+      type: Sequelize.STRING,
+    },
+    fee: {
+      type: Sequelize.STRING,
+    },
+    apr: {
+      type: Sequelize.STRING,
+    },
   });
 
   return poolinfo;
