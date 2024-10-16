@@ -19,7 +19,6 @@ module.exports = (sequelize, Sequelize) => {
     },
     liq: {
       type: Sequelize.STRING,
-      allowNull: false,
     },
     vol: {
       type: Sequelize.STRING,
@@ -30,6 +29,27 @@ module.exports = (sequelize, Sequelize) => {
     apr: {
       type: Sequelize.STRING,
     },
+    amountA:{
+      type: Sequelize.STRING,
+    },
+    amountB:{
+      type: Sequelize.STRING,
+    },
+    lpAmount: {
+      type: Sequelize.STRING,
+    },
+    lpPrice: {
+      type: Sequelize.STRING,
+    },
+    lpMint: {
+      type: Sequelize.STRING,
+    },
+    farmOngoingCount: {
+      type: Sequelize.STRING,
+    },
+    programId: {
+      type: Sequelize.STRING,
+    }
   });
 
   return poolinfo;

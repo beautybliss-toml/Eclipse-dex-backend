@@ -11,6 +11,7 @@ module.exports = (app) => {
   var router1 = require("express").Router();
   router1.get("/getPoolInfo", poolController.getPoolInfo);
   router1.post("/savePoolInfo", poolController.savePoolInfo);
+  router1.get("/getOnePoolInfo", poolController.getOnePoolInfo);
 
   app.use("/epsapi/", router1);
 };
