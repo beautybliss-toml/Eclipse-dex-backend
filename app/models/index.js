@@ -20,5 +20,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.poolinfo = require('./poolinfo.model.js')(sequelize, Sequelize);
+db.poolPrice = require('./poolPrice.model.js')(sequelize, Sequelize);
 
 module.exports = db;
