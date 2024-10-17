@@ -15,5 +15,9 @@ module.exports = {
   //   useNewUrlParser: true,
   //   useUnifiedTopology: true
   // },
-  serviceUrl: process.env.REACT_APP_SERVICE_URL || 'http://192.168.1.3:5005/api'
+  serviceUrl: process.env.REACT_APP_SERVICE_URL || 'http://192.168.1.3:5005/api',
+  // network config
+  rpcUrl: "https://testnet.dev2.eclipsenetwork.xyz", // mainnet network
+  // rpcUrl: "https://testnet.dev2.eclipsenetwork.xyz", // test network
+  programId: "tmcnqP66JdK5UwnfGWJCy66K9BaJjnCqvoGNYEn9VJv"
 };

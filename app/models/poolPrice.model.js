@@ -5,9 +5,12 @@ module.exports = (sequelize, Sequelize) => {
       primaryKey: true,
       autoIncrement: true,
     }, // primary key
-    poolInfoId: {
-      type: Sequelize.INTEGER,
-    }, //  secondary key
+    inputMint: {
+      type: Sequelize.STRING,
+    },
+    outputMint: {
+      type: Sequelize.STRING,
+    },
     timestamp: {
       type: Sequelize.INTEGER
     },

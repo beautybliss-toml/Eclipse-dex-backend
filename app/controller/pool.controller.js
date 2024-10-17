@@ -45,19 +45,18 @@ exports.savePoolInfo = async (req, res) => {
 };
 
 exports.getOnePoolInfo = async (req, res) => {
-    try {
+  try {
 
-        const poolId = req.query.id;
+    const poolId = req.query.id;
 
-        let poolInfo = await PoolInfo.findAll({
-            where: {
-            poolId: poolId,
-            }
-        })
- 
-      res.json({ poolInfo: poolInfo });
-    } catch (error) {
-      res.status(500).json({ message: error.message });
-    }
-  };
-  
+    let poolInfo = await PoolInfo.findAll({
+      where: {
+        poolId: poolId,
+      }
+    })
+
+    res.json({ poolInfo: poolInfo });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

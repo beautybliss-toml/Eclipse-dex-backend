@@ -18,12 +18,9 @@ module.exports = (app) => {
   //poolprice controller
   const poolPriceController = require("../controller/poolPrice.controller.js");
   var router2 = require("express").Router();
-  const getPoolPrice = () => {
-    
-  }
+  poolPriceController.getPoolPriceFromContract()
+
   router1.get("/getPoolPrice", poolPriceController.getPoolPrice);
-  
 
   app.use("/epsapi/", router2);
-  
 };
