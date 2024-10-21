@@ -20,7 +20,7 @@ const getBalance = async (inputMint, outputMint) => {
     const inputToken = new PublicKey(inputMint);
     const outputToken = new PublicKey(outputMint);
 
-    let config_index = 5;
+    let config_index = 8;
 
     const [address, _] = await getAmmConfigAddress(
       config_index,
